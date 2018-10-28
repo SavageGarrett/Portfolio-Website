@@ -1,4 +1,9 @@
-public/images/*.psd
+public/images/author-1.psd
+public/images/author-2.psd
+public/images/image_1.psd
+public/images/person_1.psd
+public/images/work-1.psd
+public/images/work-2.psd
 __MACOSX/._beckham
 __MACOSX/beckham/._.DS_Store
 __MACOSX/beckham/._about.html
