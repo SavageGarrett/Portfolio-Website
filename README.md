@@ -1,5 +1,5 @@
 # Portfolio-Website
-Website powered by and written in node.js, in order to display my personal portfolio.\
+Website powered by and written in node.js, in order to display my personal portfolio.
 
 ## Github
 Version Controlled and Backed up on https://github.com/SavageGarrett/Portfolio-Website
