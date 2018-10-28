@@ -9,7 +9,7 @@ Run the web server by running
 
 ### On Linux Terminal: 
 ```console
-user@webserverr:~$ node ./bin/www
+user@webserver:~$ node ./bin/www
 ```
 ### On Power Shell: 
 ```powershell
@@ -17,11 +17,11 @@ PS C:\User\Web-Server> node .\bin\www
 ```
 
 ## Limitations and Suggestions
-Current Functionality allows only for the server to be ran with the aforementioned commands, the html page files are stored in the location:
+Current Functionality allows only for the server to be ran with the aforementioned commands, the html page files are stored in the location.
 ```powershell
 .\views\
 ```
-In order for ports to be changed and other start parameters to be evaluated, you will need to access the file: 
+In order for ports to be changed and other start parameters to be evaluated, you will need to access this file.
 ```powershell
 .\bin\www
 ```
