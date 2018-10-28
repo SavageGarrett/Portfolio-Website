@@ -8,17 +8,12 @@ router.get('/', function(req, res, next) {
 
 /* GET index page. */
 router.get('/index', function(req, res, next) {
-  res.render('index');
+  res.render('index/#contact');
 });
 
 /* GET resume page. */
 router.get('/resume', function(req, res, next) {
   res.render('about');
-});
-
-/* GET services page. */
-router.get('/services', function(req, res, next) {
-  res.render('services');
 });
 
 /* GET portfolio page. */
