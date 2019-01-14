@@ -16,16 +16,18 @@ PS C:\User\Web-Server> npm install <package-name>
 ```
 
 ## Run
-Run the web server by running 
+Run the web server by running
 
-### On Linux Terminal: 
+### On Linux Terminal:
 ```console
 user@webserver:~$ node ./bin/www
 ```
-### On Power Shell: 
+### On Power Shell:
 ```powershell
 PS C:\User\Web-Server> node .\bin\www
 ```
+
+Downloads for Node.js can be found at https://nodejs.org/
 
 ## Limitations and Suggestions
 Current Functionality allows only for the server to be ran with the aforementioned commands, the html page files are stored in the location.

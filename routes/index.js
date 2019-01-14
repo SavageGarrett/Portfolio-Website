@@ -1,39 +1,60 @@
 var express = require('express');
 var router = express.Router();
+var debugHandler = require('../bin/debug.js');
+var onelookAPI = require('../api/onelookAPI.js')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
+  debugHandler("HTTP request at /");
   res.render('index');
 });
 
-/* GET index page. */
-router.get('/index', function(req, res, next) {
-  res.render('index/#contact');
+/* GET onelook custom API call */
+router.get('/api/onelook/:options', function(req, res) {
+  let options = req.params['options'];
+  debugHandler("API request for onelook API with params: " + options);
+
+  word = onelookAPI.getWordResult(options);
+
+  // TODO
+  // Send a json object via res
 });
 
-/* GET resume page. */
-router.get('/resume', function(req, res, next) {
-  res.render('about');
-});
+router.get('/:query', function (req, res, next){
+  let query = req.params['query'];
+  debugHandler("HTTP request at /" + query);
 
-/* GET portfolio page. */
-router.get('/portfolio', function(req, res, next) {
-  res.render('portfolio');
-});
-
-/* GET blog page. */
-router.get('/blog', function(req, res, next) {
-  res.render('blog');
-});
-
-/* GET contact page. */
-router.get('/contact', function(req, res, next) {
-  res.render('contact');
-});
-
-/* GET error page. */
-router.get('/error', function(req, res, next) {
-  res.render('error');
+  /* Handle Possible Page Querys */
+  switch(query){
+    /* Render Index */
+    case "index":
+      res.render('index');
+      break;
+    /* Render Resume Page */
+    case "resume":
+      res.render('resume');
+      break;
+    /* Render Portfolio Page */
+    case "porfolio":
+      res.render('portfolio');
+      break;
+    /* Render Blog Page */
+    case "blog":
+      res.render('blog');
+      break;
+    /* Render Contact Page */
+    case "contact":
+      res.render('contact');
+      break;
+    /* Render Error Page */
+    case "error":
+      res.render('error');
+      break;
+    /* Render Error Page if no other page is found */
+    default:
+      res.render('error');
+      break;
+  }
 });
 
 module.exports = router;
