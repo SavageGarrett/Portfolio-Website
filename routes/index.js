@@ -9,17 +9,6 @@ router.get('/', function(req, res, next) {
   res.render('index');
 });
 
-/* GET onelook custom API call */
-router.get('/api/onelook/:options', function(req, res) {
-  let options = req.params['options'];
-  debugHandler("API request for onelook API with params: " + options);
-
-  word = onelookAPI.getWordResult(options);
-
-  // TODO
-  // Send a json object via res
-});
-
 router.get('/:query', function (req, res, next){
   let query = req.params['query'];
   debugHandler("HTTP request at /" + query);
