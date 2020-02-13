@@ -9,6 +9,17 @@ var indexRouter = require('./routes/index');
 var app = express();
 var jsApp = express();
 
+// Redirect to https
+app.use ((req, res, next) => {
+  if (req.secure) {
+          // request was via https, so do no special handling
+          next();
+  } else {
+          // request was via http, so redirect to https
+          res.redirect('https://' + req.headers.host + req.url);
+  }
+});
+
 // view engine setup
 app.engine('html', require('./htmlEngine'));
 app.set('view engine', 'html');

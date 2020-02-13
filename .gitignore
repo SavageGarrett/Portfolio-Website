@@ -9,3 +9,4 @@ public/images/work-2.psd
 __MACOSX/
 node_modules/
 views/templates/
+public/acme-challenge/

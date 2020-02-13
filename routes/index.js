@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var debugHandler = require('../bin/debug.js');
 var onelookAPI = require('../api/onelookAPI.js')
+var path = require('path')
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -21,7 +22,7 @@ router.get('/:query', function (req, res, next){
       break;
     /* Render Resume Page */
     case "resume":
-      res.sendFile(path.join(__dirname + '../public/resume.pdf'));
+      res.sendFile(path.join(__dirname + '/../public/pdf/resume.pdf'));
       break;
     /* Render Portfolio Page */
     case "porfolio":
@@ -37,7 +38,7 @@ router.get('/:query', function (req, res, next){
       break;
     /* Pangea Poster */
     case "pangea-flyer":
-      res.sendFile(path.join(__dirname + '../public/images'))
+      res.sendFile(path.join(__dirname + '/../public/pdf/pangea-flyer.pdf'))
       break;
     /* Render Error Page */
     case "error":
@@ -49,5 +50,9 @@ router.get('/:query', function (req, res, next){
       break;
   }
 });
+
+router.get('/.well-known/acme-challenge/GFv_EgteQc9DKfMaM__OMTXyB_AreNZb8-WzTZExkpY', (req, res, next) => {
+  res.sendFile(path.join(__dirname + '/../public/acme-challenge/acme'))
+})
 
 module.exports = router;
