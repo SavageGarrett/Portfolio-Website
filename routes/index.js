@@ -38,6 +38,7 @@ router.get('/:query', function (req, res, next){
     /* Pangea Poster */
     case "pangea-flyer":
       res.sendFile(path.join(__dirname + '../public/images'))
+      break;
     /* Render Error Page */
     case "error":
       res.render('error');
