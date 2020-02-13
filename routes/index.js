@@ -21,7 +21,7 @@ router.get('/:query', function (req, res, next){
       break;
     /* Render Resume Page */
     case "resume":
-      res.render('resume');
+      res.sendFile(path.join(__dirname + '../public/resume.pdf'));
       break;
     /* Render Portfolio Page */
     case "porfolio":
@@ -35,6 +35,9 @@ router.get('/:query', function (req, res, next){
     case "contact":
       res.render('contact');
       break;
+    /* Pangea Poster */
+    case "pangea-flyer":
+      res.sendFile(path.join(__dirname + '../public/images'))
     /* Render Error Page */
     case "error":
       res.render('error');
