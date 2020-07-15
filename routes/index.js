@@ -44,6 +44,9 @@ router.get('/:query', function (req, res, next){
     case "error":
       res.render('error');
       break;
+    case "traveler":
+      res.redirect('https://focused-lewin-02418e.netlify.com/');
+      break;
     /* Render Error Page if no other page is found */
     default:
       res.render('error');
@@ -51,8 +54,52 @@ router.get('/:query', function (req, res, next){
   }
 });
 
-router.get('/.well-known/acme-challenge/GFv_EgteQc9DKfMaM__OMTXyB_AreNZb8-WzTZExkpY', (req, res, next) => {
-  res.sendFile(path.join(__dirname + '/../public/acme-challenge/acme'))
+let last_template = "eatwell";
+
+router.get('/public/templates/:template', (req, res, next) => {
+  let template = req.params.template;
+
+  switch (template) {
+    case 'bollywood':
+      res.sendFile(path.join(__dirname, '../public/templates/eatwell/index.html'));
+      break;
+    case 'menu.html':
+      res.sendFile(path.join(__dirname, '../public/templates/eatwell/menu.html'));
+      break;
+    case 'about.html':
+      res.sendFile(path.join(__dirname, '../public/templates/eatwell/about.html'));
+      break;
+    case 'contact.html':
+      res.sendFile(path.join(__dirname, '../public/templates/eatwell/contact.html'));
+      break;
+    case 'menu.pdf':
+      res.sendFile(path.join(__dirname, '../public/templates/eatwell/menu.pdf'));
+      break;
+    default:
+      res.sendFile(path.join(__dirname, '../public/templates/eatwell/index.html'));
+      break;
+  }
+  
+});
+
+router.get('/public/templates/:folder/:file', (req, res, next) => {
+  let folder = req.params.folder, file = req.params.file;
+  res.sendFile(path.join(__dirname, `../public/templates/${last_template}/${folder}/${file}`))
+});
+
+router.get('/public/templates/:folder1/:folder2/:file', (req, res, next) => {
+  let folder1 = req.params.folder1, folder2 = req.params.folder2, file = req.params.file;
+  res.sendFile(path.join(__dirname, `../public/templates/${last_template}/${folder1}/${folder2}/${file}`))
+});
+
+router.get('/public/templates/:folder1/:folder2/:folder3/:file', (req, res, next) => {
+  let folder1 = req.params.folder1, folder2 = req.params.folder2, folder3 = req.params.folder3, file = req.params.file;
+  res.sendFile(path.join(__dirname, `../public/templates/${last_template}/${folder1}/${folder2}/${folder3}/${file}`))
+});
+
+router.get('/.well-known/acme-challenge/:id', (req, res, next) => {
+  let id = req.params.id;
+  res.sendFile(path.join(__dirname, `../public/.well-known/acme-challenge/${id}`))
 })
 
 module.exports = router;

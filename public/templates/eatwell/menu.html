@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bollywood Bistro</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/addins.css">
+  </head>
+  <body data-spy="scroll" data-target="#site-navbar" data-offset="200">
+    
+    <nav style="background: black !important;" class="navbar navbar-expand-lg navbar-dark site_navbar bg-dark site-navbar-light" id="site-navbar">
+      <div class="container">
+        
+        <p style="margin-bottom: auto; margin-top: auto;" class="navbar-brand" href="index.html">
+          <a style="color: #f4e216 !important;" class="navbar-brand" href="index.html">Bollywood</a>Bistro
+        </p>
+        <button style="color: white !important;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#site-nav" aria-controls="site-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="site-nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active"><a  href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a  href="about.html" class="nav-link">About</a></li>
+            <!-- <li class="nav-item"><a href="#section-offer" class="nav-link">Offer</a></li> -->
+            <li class="nav-item"><a  href="menu.html" class="nav-link">Menu</a></li>
+            <!-- <li class="nav-item"><a href="#section-news" class="nav-link">News</a></li>
+            <li class="nav-item"><a href="#section-gallery" class="nav-link">Gallery</a></li> -->
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END nav -->
+
+    <section class="site-section" id="section-menu">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center mb-5 site-animate">
+              <h2 class="display-4">Our Menu</h2>
+              <div class="row justify-content-center">
+                <div class="col-md-7">
+                  <p class="lead">Check out some of our most popular North Indian dishes.</p>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-3">
+                  <div class="center-indicators">
+                    <img src="images/menu-icons/vegan.png" alt="Vegan Dish">
+                    <a>Vegan Dish</a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="center-indicators">
+                    <img src="images/menu-icons/spicy.png" alt="Spicy Dish">
+                    <a>Spicy Dish</a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="center-indicators">
+                    <img src="images/menu-icons/GF.png" alt="Gluten Free Dish">
+                    <a>Gluten Free Dish</a>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <div class="center-indicators">
+                    <img src="images/menu-icons/long-prep.png" alt="Longer Prep Time">
+                    <a>Longer Prep Time</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <style>
+                .nav-item.site-animate {
+                    margin-top: 15px;
+                }
+
+                .site-tab-nav li a.active {
+                  background: white !important;
+                  border: 2px solid #f4e216 !important;
+                }
+            </style>
+
+            <div class="col-md-12 text-center">
+              <ul class="nav site-tab-nav nav-pills mb-5" id="pills-tab" role="tablist">
+                <li class="nav-item site-animate">
+                  <a class="nav-link active" id="pills-breakfast-tab" data-toggle="pill" href="#pills-specials" role="tab" aria-controls="pills-breakfast" aria-selected="true">Specials</a>
+                </li>
+                <li class="nav-item site-animate">
+                  <a class="nav-link" id="pills-lunch-tab" data-toggle="pill" href="#pills-street-food" role="tab" aria-controls="pills-lunch" aria-selected="false">Street Food</a>
+                </li>
+                <li class="nav-item site-animate">
+                  <a class="nav-link" id="pills-dinner-tab" data-toggle="pill" href="#pills-entrees" role="tab" aria-controls="pills-dinner" aria-selected="false">Entrees</a>
+                </li>
+                <li class="nav-item site-animate">
+                    <a class="nav-link" id="pills-dinner-tab" data-toggle="pill" href="#pills-chef-creations" role="tab" aria-controls="pills-dinner" aria-selected="false">Chef Creations</a>
+                </li>
+                <li class="nav-item site-animate">
+                    <a class="nav-link" id="pills-dinner-tab" data-toggle="pill" href="#pills-breads-rice" role="tab" aria-controls="pills-dinner" aria-selected="false">Breads and Rice</a>
+                </li>
+                <li class="nav-item site-animate">
+                    <a class="nav-link" id="pills-dinner-tab" data-toggle="pill" href="#pills-desserts" role="tab" aria-controls="pills-dinner" aria-selected="false">Desserts</a>
+                </li>
+                <li class="nav-item site-animate">
+                    <a class="nav-link" id="pills-dinner-tab" data-toggle="pill" href="#pills-beverages" role="tab" aria-controls="pills-dinner" aria-selected="false">Beverages</a>
+                </li>
+              </ul>
+  
+              <div class="tab-content text-left">
+                <div class="tab-pane fade show active" id="pills-specials" role="tabpanel" aria-labelledby="pills-breakfast-tab">
+                  <div class="row">
+                    <div class="col-md-6 site-animate">
+                      <div class="media menu-item">
+                        <div class="media-body">
+                          <div class="menu-food-icon">
+                            <img src="images/menu-icons/vegan.png" alt="Vegan Dish">
+                            <h5 class="mt-0">Chole Bhature</h5>
+                          </div>
+                          <div class="menu-content">
+                            <p>chickpeas cooked in an exotic blend of herbs and spices, served with two deep fried puffy breads</p>
+                            <h6 class="text-primary menu-price">$9.99</h6>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        <div class="media-body">
+                          <div class="menu-food-icon">
+                            <img src="images/menu-icons/vegan.png" alt="Vegan Dish">
+                            <h5 class="mt-0">Aloo Kulcha Chole</h5>
+                          </div>
+                          <div class="menu-content">
+                            <p>clay oven baked bread stuffed with mashed potatoes and spices, served with cooked chickpeas gravy</p>
+                            <h6 class="text-primary menu-price">$10.99</h6>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        <div class="media-body">
+                          <h5 class="mt-0">Paneer Kulcha Chole</h5>
+                          <p>clay oven baked bread stuffed with cottage cheese and spices, served with cooked chickpeas gravy</p>
+                          <h6 class="text-primary menu-price">$12.99</h6>
+                        </div>
+                      </div>
+  
+                    </div>
+                    <div class="col-md-6 site-animate">
+                      <div class="media menu-item">
+                        <div class="media-body">
+                          <h5 class="mt-0">Makki Ki Roti with Sarson Ka Saag</h5>
+                          <p>mustard greens and other green leafy vegetables blended and simmered in spices, served with yellow corn breads</p>
+                          <h6 class="text-primary menu-price">$12.99</h6>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        <div class="media-body">
+                          <div class="menu-food-icon">
+                            <img src="images/menu-icons/vegan.png" alt="Vegan Dish">
+                            <h5 class="mt-0">Aloo Paratha Plate</h5>
+                          </div>
+                          <div class="menu-content">
+                            <p>whole wheat round flat breads suffed with potatoes, herbs and spices, served with mango pickle and yogurt</p>
+                            <h6 class="text-primary menu-price">$7.99</h6>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        <div class="media-body">
+                          <div class="menu-food-icon">
+                            <img src="images/menu-icons/spicy.png" alt="Spicy Dish">
+                            <img src="images/menu-icons/vegan.png" alt="Vegan Dish">
+                            <h5 class="mt-0">Gobi Manchurian</h5>
+                          </div>
+                          <div class="menu-content">
+                            <p>crispy cauliflower florets tossed in a spicy, sweet and tangy manchurian sauce</p>
+                            <h6 class="text-primary menu-price">$8.99</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-street-food" role="tabpanel" aria-labelledby="pills-lunch-tab">
+                  <div class="row">
+                    <div class="col-md-6 site-animate">
+                      <div class="media menu-item">
+                        <div class="media-body">
+                          <div class="menu-food-icon">
+                            <img src="images/menu-icons/vegan.png" alt="Vegan Dish">
+                            <h5 class="mt-0">Bhel Puri</h5>
+                          </div>
+                          <div class="menu-content">
+                            <p>a mix of puffed rice, thin crispy chickpea noodles, potatoes, onions, cilantro, cilantro sauce, tamarind sauce and lime</p>
+                            <h6 class="text-primary menu-price">$4.99</h6>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        <div class="media-body">
+                          <div class="menu-food-icon">
+                            <img src="images/menu-icons/vegan.png" alt="Vegan Dish">
+                            <h5 class="mt-0">Sev Puri</h5>
+                          </div>
+                          <div class="menu-content">
+                            <p>potatoes, onions, cilantro sauce, tamarind sauce, lime and thin crispy chickpea noodles layered on crispy flat chips</p>
+                            <h6 class="text-primary menu-price">$5.99</h6>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        <div class="media-body">
+                          <div class="menu-food-icon">
+                            <img src="images/menu-icons/spicy.png" alt="Spicy Dish">
+                            <img src="images/menu-icons/vegan.png" alt="Vegan Dish">
+                            <h5 class="mt-0">Paani Puri</h5>
+                          </div>
+                          <div class="menu-content">
+                            <p>crispy round shells filled with potatoes, boiled black chickpeas, tamarind sauce and spicy mint water</p>
+                            <h6 class="text-primary menu-price">$5.99</h6>
+                          </div>
+                        </div>
+                      </div>
+  
+                    </div>
+                    <div class="col-md-6 site-animate">
+  
+                      <div class="media menu-item">
+                        <div class="media-body">
+                          <h5 class="mt-0">Dahi Puri</h5>
+                          <p>crispy round shells filled with potatoes, onions, boiled chickpeas, cilantro sauce, tamarind sauce, yogurt and topped with thin crispy chickpea noodles</p>
+                          <h6 class="text-primary menu-price">$6.99</h6>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        <div class="media-body">
+                          <h5 class="mt-0">Dahi Sev Puri</h5>
+                          <p>potatoes, onions, cilantro sauce, tamarind sauce, yogurt and thin crispy chickpea noodles layered on crispy flat chips</p>
+                          <h6 class="text-primary menu-price">$5.99</h6>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        <div class="media-body">
+                          <h5 class="mt-0">Paapdi Chaat</h5>
+                          <p>potatoes, onions, boiled chickpeas, cilantro sauce tamarind sauce and yogurt layered on crispy flat chips</p>
+                          <h6 class="text-primary menu-price">$5.99</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-entrees" role="tabpanel" aria-labelledby="pills-dinner-tab">
+                  <div class="row">
+                    <div class="col-md-6 site-animate">
+  
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+                          <h5 class="mt-0">Kadhai Paneer</h5>
+                          <p>paneer, green peppers and onions tossed in a semi dry tomato gravy</p>
+                          <h6 class="text-primary menu-price">$10.99</h6>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+                          <h5 class="mt-0">Paneer Butter Masala</h5>
+                          <p>paneer in rich and creamy tomato gravy *contains nuts</p>
+                          <h6 class="text-primary menu-price">$11.99</h6>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+                          <h5 class="mt-0">Paneer Tikka Masala</h5>
+                          <p>paneer cubes, green peppers and onions in a creamy tomato gravy *contains nuts</p>
+                          <h6 class="text-primary menu-price">$11.99</h6>
+                        </div>
+                      </div>
+  
+                    </div>
+                    <div class="col-md-6 site-animate">
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+                          <h5 class="mt-0">Baingan Bharta</h5>
+                          <p>fire roasted eggplant mashed and cooked with aromatic spices</p>
+                          <h6 class="text-primary menu-price">$9.99</h6>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+                          <h5 class="mt-0">Bhindi Masala</h5>
+                          <p>sauteed okra cooked with onions, tomatoes and spices</p>
+                          <h6 class="text-primary menu-price">$9.99</h6>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+                          <h5 class="mt-0">Dum Aloo</h5>
+                          <p>whole baby potatoes in a semi dry tomato gravy *vegan option available</p>
+                          <h6 class="text-primary menu-price">$9.99</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-chef-creations" role="tabpanel" aria-labelledby="pills-dinner-tab">
+                  <div class="row">
+                    <div class="col-md-6 site-animate">
+  
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+                          <div class="menu-food-icon">
+                            <img src="images/menu-icons/spicy.png" alt="Spicy Dish">
+                            <img src="images/menu-icons/vegan.png" alt="Vegan Dish">
+                            <img src="images/menu-icons/GF.png" alt="Gluten Free Dish">
+                            <img src="images/menu-icons/long-prep.png" alt="Long Prep Time">
+                            <h5 class="mt-0">Spicy Masala Fries</h5>
+                          </div>
+                          <div class="menu-content">
+                            <p>fries with special spicy marination, topped with onions and cilantro</p>
+                            <h6 class="text-primary menu-price">$6.99</h6>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+                          <h5 class="mt-0">Bhaaji Quesadilla</h5>
+                          <p>a smooth medley of vegetables cooked in a special blend of spices in quesadilla style, topped with grated Indian cheese, onions and cilantro</p>
+                          <h6 class="text-primary menu-price">$7.99</h6>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+                          <h5 class="mt-0">Taco Tikka Masala</h5>
+                          <p>sauteed paneer with green peppers, onions, cilantro and house sauces in mini soft flour tortillas</p>
+                          <h6 class="text-primary menu-price">$6.99</h6>
+                        </div>
+                      </div>
+  
+                    </div>
+                    <div class="col-md-6 site-animate">
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+                          <div class="menu-food-icon">
+                            <img src="images/menu-icons/vegan.png" alt="Vegan Dish">
+                            <h5 class="mt-0">Cholupa</h5>
+                          </div>
+                          <div class="menu-content">
+                            <p>seasoned chickpeas with house sauce, wrapped in a flour tortilla and deep fried</p>
+                            <h6 class="text-primary menu-price">$5.99</h6>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+
+                          <div class="menu-food-icon">
+                            <img src="images/menu-icons/vegan.png" alt="Vegan Dish">
+                            <h5 class="mt-0">Taco Chole</h5>
+                          </div>
+                          <div class="menu-content">
+                            <p>seasoned chickpeas with house sauce in soft flour tacos, topped with onions and cilantro</p>
+                            <h6 class="text-primary menu-price">$5.99</h6>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+                          <div class="menu-food-icon">
+                            <img src="images/menu-icons/spicy.png" alt="Spicy Dish">
+                            <img src="images/menu-icons/GF.png" alt="Gluten Free Dish">
+                            <img src="images/menu-icons/long-prep.png" alt="Long Prep Time">
+                            <h5 class="mt-0">Paneer Piripiri</h5>
+                          </div>
+                          <div class="menu-content">
+                            <p>grilled paneer with special spicy marination on a bed of fries topped with onions and cilantro *contains nuts</p>
+                            <h6 class="text-primary menu-price">$10.99</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-breads-rice" role="tabpanel" aria-labelledby="pills-dinner-tab">
+                  <div class="row">
+                    <div class="col-md-6 site-animate">
+  
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+                          <h5 class="mt-0">Butter Naan</h5>
+                          <p>leavened bread baked in clay oven coated with butter</p>
+                          <h6 class="text-primary menu-price">$1.99</h6>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+                          <h5 class="mt-0">Garlic Naan</h5>
+                          <p>leavened bread baked in clay oven coated with garlic and butter</p>
+                          <h6 class="text-primary menu-price">$2.99</h6>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+                          <h5 class="mt-0">Tandoori Roti</h5>
+                          <p>whole wheat round bread baked in clay oven</p>
+                          <h6 class="text-primary menu-price">$1.99</h6>
+                        </div>
+                      </div>
+  
+                    </div>
+                    <div class="col-md-6 site-animate">
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+                          <div class="menu-food-icon">
+                            <img src="images/menu-icons/vegan.png" alt="Vegan Dish">
+                            <h5 class="mt-0">Aloo Paratha</h5>
+                          </div>
+                          <div class="menu-content">
+                            <p>whole wheat round flat bread stuffed with potatoes, herbs and spices</p>
+                            <h6 class="text-primary menu-price">$2.99</h6>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+                          <div class="menu-food-icon">
+                            <img src="images/menu-icons/GF.png" alt="Gluten Free Dish">
+                            <h5 class="mt-0">Rice</h5>
+                          </div>
+                          <br>
+                          <div class="menu-content">
+                            <p>aromatic basmati rice</p>
+                            <h6 class="text-primary menu-price">$3.99</h6>
+                          </div>
+                        </div>
+                      </div>
+  
+                      <div class="media menu-item">
+                        
+                        <div class="media-body">
+                          <div class="menu-food-icon">
+                            <img src="images/menu-icons/GF.png" alt="Gluten Free Dish">
+                            <h5 class="mt-0">Veg Biryani</h5>
+                          </div>
+                          <div class="menu-content" style="margin-right: 100px;">
+                            <p>basmati rice flavored with exotic spices and layered with specially marinated vegetables</p>
+                            <h6 class="text-primary menu-price">$9.99</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="pills-desserts" role="tabpanel" aria-labelledby="pills-dinner-tab">
+                    <div class="row">
+                      <div class="col-md-6 site-animate">
+    
+                        <div class="media menu-item">
+                          <!--  -->
+                          <div class="media-body">
+                            <div class="menu-food-icon">
+                              <img src="images/menu-icons/GF.png" alt="Gluten Free Dish">
+                              <h5 class="mt-0">Ras Malai</h5>
+                            </div>
+                            <div class="menu-content">
+                              <p>dumplings made from ricotta cheese soaked in sweetened, thickened milk, delicately flavored with cardamom and topped with nuts</p>
+                              <h6 class="text-primary menu-price">$3.99</h6>
+                            </div>
+                          </div>
+                        </div>
+    
+                        <div class="media menu-item">
+                          <!--  -->
+                          <div class="media-body">
+                            <h5 class="mt-0">Gulab Jamun</h5>
+                            <p>sweet dumplings soaked in rose and cardamom flavored sugar syrup</p>
+                            <h6 class="text-primary menu-price">$3.99</h6>
+                          </div>
+                        </div>
+    
+                        <div class="media menu-item">
+                          <!--  -->
+                          <div class="media-body">
+                            <div class="menu-food-icon">
+                              <img src="images/menu-icons/GF.png" alt="Gluten Free Dish">
+                              <h5 class="mt-0">Gajar Halwa</h5>
+                            </div>
+                            <div class="menu-content">
+                              <p>rich sweet carrot pudding topped with nuts and raisins</p>
+                              <h6 class="text-primary menu-price">$5.99</h6>
+                            </div>
+                          </div>
+                        </div>
+    
+                      </div>
+                      <div class="col-md-6 site-animate">
+                        <div class="media menu-item">
+                          <!--  -->
+                          <div class="media-body">
+                            <h5 class="mt-0">Moong Dal Halwa</h5>
+                            <p>rich sweet lentil pudding topped with nuts</p>
+                            <h6 class="text-primary menu-price">$5.99</h6>
+                          </div>
+                        </div>
+    
+                        <div class="media menu-item">
+                          <!--  -->
+                          <div class="media-body">
+                            <div class="menu-food-icon">
+                              <img src="images/menu-icons/GF.png" alt="Gluten Free Dish">
+                              <h5 class="mt-0">Falooda Icecream</h5>
+                            </div>
+                            <div class="menu-content">
+                              <p>cold dessert with a mix of rose syrup, vermicelli, sweet basil seeds and nuts in dense ice cream</p>
+                              <h6 class="text-primary menu-price">$4.99</h6>
+                            </div>
+                          </div>
+                        </div>
+    
+                        <div class="media menu-item">
+                          <div class="row justify-content-center">
+                            <h5>*all desserts contain nuts</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="pills-beverages" role="tabpanel" aria-labelledby="pills-dinner-tab">
+                    <div class="row justify-content-center">
+                      <div class="col-md-4 site-animate">
+                        <div class="media menu-item">
+                          <div class="media-body">
+                            <h5 class="mt-0">Mango Lassi</h5>
+                            <h6 class="text-primary menu-price">$3.99</h6>
+                          </div>
+                        </div>
+    
+                        <div class="media menu-item">
+                          
+                          <div class="media-body">
+                            <h5 class="mt-0">Rose Lassi</h5>
+                            <h6 class="text-primary menu-price">$3.99</h6>
+                          </div>
+                        </div>
+    
+                        <div class="media menu-item">
+                          
+                          <div class="media-body">
+                            <div class="menu-food-icon">
+                              <img src="images/menu-icons/spicy.png" alt="Spicy Drink">
+                              <h5 class="mt-0">Spicy Masala Lassi</h5>
+                            </div>
+                            <div class="menu-content">
+                              <h6 class="text-primary menu-price">$4.49</h6>
+                            </div>
+                            
+                            
+                          </div>
+                        </div>
+    
+                      </div>
+                      <div class="col-md-4 site-animate">
+                        <div class="media menu-item">
+                          
+                          <div class="media-body">
+                            <h5 class="mt-0">Salted Lassi</h5>
+                            <h6 class="text-primary menu-price">$3.99</h6>
+                          </div>
+                        </div>
+    
+                        <div class="media menu-item">
+                          
+                          <div class="media-body">
+                            <h5 class="mt-0">Sweet Lassi</h5>
+                            <h6 class="text-primary menu-price">$3.99</h6>
+                          </div>
+                        </div>
+    
+                        <div class="media menu-item">
+                          
+                          <div class="media-body">
+                            <h5 class="mt-0">Masala Soda</h5>
+                            <h6 class="text-primary menu-price">$2.99</h6>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 site-animate">
+                        <div class="media menu-item">
+                          
+                          <div class="media-body">
+                            <h5 class="mt-0">Masala Coke</h5>
+                            <h6 class="text-primary menu-price">$2.99</h6>
+                          </div>
+                        </div>
+    
+                        <div class="media menu-item">
+                          
+                          <div class="media-body">
+                            <h5 class="mt-0">Cutting Chai</h5>
+                            <h6 class="text-primary menu-price">$2.99</h6>
+                          </div>
+                        </div>
+    
+                        <div class="media menu-item">
+                          
+                          <div class="media-body">
+                            <h5 class="mt-0">Coffee</h5>
+                            <h6 class="text-primary menu-price">$2.99</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="row align-items-center justify-content-center text-center" style="margin-top: 20px;">
+            <p><a href="menu.pdf" target="_blank" class="btn btn-secondary btn-lg">See Our Full Menu</a></p>
+          </div>
+        </div>
+      </section>
+      <!-- END section -->
+    
+
+    <footer style="background-color: black;" class="site-footer site-bg-dark site-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-4 site-animate">
+                <h2 class="site-heading-2">About Us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, similique, delectus blanditiis odit expedita amet. Sed labore ipsum vel dolore, quis, culpa et magni autem sequi facere eos tenetur, ex?</p>
+              </div>
+              <div class="col-md-2"></div>
+              <div class="col-md-3 site-animate">
+                <div class="site-footer-widget mb-4">
+                  <h2 class="site-heading-2">The Restaurant</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="index.html" class="py-2 d-block">Home</a></li>
+                    <li><a href="about.html" class="py-2 d-block">About Us</a></li>
+                    <li><a href="contact.html" class="py-2 d-block">Contact</a></li>
+                    <li><a href="menu.html" class="py-2 d-block">Full Menu</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-3 site-animate">
+                  <div class="site-footer-widget mb-4">
+                  <h2 class="site-heading-2">On This Page</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#section-home" class="py-2 d-block">Home</a></li>
+                    <li><a href="#section-about" class="py-2 d-block">About</a></li>
+                    <li><a href="#section-offer" class="py-2 d-block">Specials</a></li>
+                    <li><a href="#section-menu" class="py-2 d-block">Short Menu</a></li>
+                    <li><a href="#section-contact" class="py-2 d-block">Contact</a></li>
+                  </ul>
+                </div>
+              </div>
+              <!-- <div class="col-md-2 site-animate">
+                  <div class="site-footer-widget mb-4">
+                  <h2 class="site-heading-2">Useful links</h2>
+                  <ul class="list-unstyled">
+                    <li><a href="#" class="py-2 d-block">Foods</a></li>
+                    <li><a href="#" class="py-2 d-block">Drinks</a></li>
+                    <li><a href="#" class="py-2 d-block">Breakfast</a></li>
+                    <li><a href="#" class="py-2 d-block">Brunch</a></li>
+                    <li><a href="#" class="py-2 d-block">Dinner</a></li>
+                  </ul>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          
+        </div>
+        <div class="row site-animate">
+            <div class="col-md-12 text-center">
+            <div class="site-footer-widget mb-4">
+              <ul class="site-footer-social list-unstyled ">
+                <li class="site-animate"><a href="https://www.yelp.com/biz/bollywood-bistro-naperville"><span class="icon-yelp"></span></a></li>
+                <li class="site-animate"><a href="https://www.facebook.com/Bollywood-Bistro-1596855597008868"><span class="icon-facebook"></span></a></li>
+                <li class="site-animate"><a href="https://www.instagram.com/bollywoodbistrochicago/"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-12 text-center">
+            <p>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    
+    
+
+    <!-- Modal -->
+    <div class="modal fade" id="reservationModal" tabindex="-1" role="dialog" aria-labelledby="reservationModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="bg-image" style="background-image: url(images/reservation_1.jpg);"></div>
+              </div>
+              <div class="col-lg-12 p-5">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <small>CLOSE </small><span aria-hidden="true">&times;</span>
+                </button>
+                <h1 class="mb-4">Reserve A Table</h1>  
+                <form action="#" method="post">
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <label for="m_fname">First Name</label>
+                      <input type="text" class="form-control" id="m_fname">
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <label for="m_lname">Last Name</label>
+                      <input type="text" class="form-control" id="m_lname">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <label for="m_email">Email</label>
+                      <input type="email" class="form-control" id="m_email">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <label for="m_people">How Many People</label>
+                      <select name="" id="m_people" class="form-control">
+                        <option value="1">1 People</option>
+                        <option value="2">2 People</option>
+                        <option value="3">3 People</option>
+                        <option value="4+">4+ People</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <label for="m_phone">Phone</label>
+                      <input type="text" class="form-control" id="m_phone">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-6 form-group">
+                      <label for="m_date">Date</label>
+                      <input type="text" class="form-control" id="m_date">
+                    </div>
+                    <div class="col-md-6 form-group">
+                      <label for="m_time">Time</label>
+                      <input type="text" class="form-control" id="m_time">
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <label for="m_message">Message</label>
+                      <textarea class="form-control" id="m_message" cols="30" rows="7"></textarea>
+                    </div>
+                  </div>
+                  
+                  <div class="row">
+                    <div class="col-md-12 form-group">
+                      <input type="submit" class="btn btn-primary btn-lg btn-block" value="Reserve Now">
+                    </div>
+                  </div>
+
+                </form>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- END Modal -->
+
+    <!-- loader -->
+    <div id="site-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    
+    <script src="js/jquery.animateNumber.min.js"></script>
+    
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/google-map.js"></script>
+
+    <script src="js/main.js"></script>
+
+    
+  </body>
+</html>

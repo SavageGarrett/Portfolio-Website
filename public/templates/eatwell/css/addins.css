@@ -1,0 +1,181 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* Nav Bar Changes */
+.nav-item a {
+    color: white !important;
+}
+
+.nav-item a:hover {
+    color: #f4e216 !important;
+}
+
+/* Extra small devices (phones, 440px and down) */
+@media only screen and (max-width: 440px) {
+    #main_logo {
+        width: 250px;
+    }
+
+    .header-container {
+        width: 300px;
+    }
+
+    .mobile-pad {
+        padding-top: 0px;
+    }
+
+    /* Menu Context Images */
+    .center-indicators img {
+        max-width: 10% !important;
+    }
+
+    .center-indicators a {
+        
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #main_logo {
+        width: 250px;
+    }
+
+    .header-container {
+        width: 300px;
+    }
+
+    .mobile-pad {
+        padding-top: 0px;
+    }
+
+    /* Menu Context Images */
+    .center-indicators img {
+        max-width: 10% !important;
+    }
+
+    .center-indicators a {
+        
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #main_logo {
+        width: 400px;
+    }
+
+    .header-container {
+        width: 450px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #main_logo {
+        width: 450px;
+    }
+
+    .header-container {
+        width: 500px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #main_logo {
+        width: 500px;
+    }
+
+    .header-container {
+        width: 600px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #main_logo {
+        width: 500px;
+    }
+
+    .header-container {
+        width: 700px;
+    }
+}
+
+
+/* Section Changes */
+
+section {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+
+/* Landing Tweaks */
+
+.navbar-brand {
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+.nav-link:hover {
+    color: #f4e216 !important;
+}
+
+.front-color {
+    color: white !important;
+}
+
+a.front-color:hover {
+    color: black !important;
+}
+
+.header-container {
+    margin: auto;
+    background-color: rgba(0,0,0,.7);
+    padding-bottom: 20px;
+}
+
+/* Featured Dishes Dark Mode */
+.site-media {
+    background: black !important;
+}
+
+/* Menu Page Tweeks */
+
+.center-indicators img {
+    max-width: 40%;
+    float: left;
+}
+
+.center-indicators a {
+    color: white !important;
+    float: right;
+    white-space: nowrap;
+    position: absolute;
+    top: 35%;
+    left: 40%;
+}
+
+.menu-food-icon img {
+    float: left;
+    max-width: 10%;
+}
+
+.menu-food-icon h5 {
+    float: left;
+    margin-top: 6px !important;
+}
+
+.menu-food-icon {
+    float: none;
+}
+
+.menu-content {
+    clear: both;
+}
