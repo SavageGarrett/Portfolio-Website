@@ -11,3 +11,5 @@ node_modules/
 views/templates/
 public/acme-challenge/
 keys/
+.ssh/
+*.psd
