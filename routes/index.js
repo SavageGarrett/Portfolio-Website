@@ -72,6 +72,10 @@ router.get('/public/templates/:template', (req, res, next) => {
     case 'contact.html':
       res.sendFile(path.join(__dirname, '../public/templates/eatwell/contact.html'));
       break;
+    case 'contact_success.html':
+      console.log('sanity check')
+      res.sendFile(path.join(__dirname, '../public/templates/eatwell/contact_success.html'));
+      break;
     case 'menu.pdf':
       res.sendFile(path.join(__dirname, '../public/templates/eatwell/menu.pdf'));
       break;
