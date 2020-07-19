@@ -36,6 +36,9 @@ router.get('/:query', function (req, res, next){
     case "contact":
       res.render('contact');
       break;
+    case "sites":
+      res.render('sites');
+      break;
     /* Pangea Poster */
     case "pangea-flyer":
       res.sendFile(path.join(__dirname + '/../public/pdf/pangea-flyer.pdf'))
