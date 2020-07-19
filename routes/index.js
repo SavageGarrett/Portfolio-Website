@@ -20,6 +20,9 @@ router.get('/:query', function (req, res, next){
     case "index":
       res.render('index');
       break;
+    case "index.html":
+      res.render('index');
+      break;
     /* Render Resume Page */
     case "resume":
       res.sendFile(path.join(__dirname + '/../public/pdf/resume.pdf'));
