@@ -31,8 +31,16 @@ html, body {
         max-width: 10% !important;
     }
 
-    .center-indicators a {
-        
+    .about-page-section {
+        margin-top: 0px;
+    }
+
+    #section-home > div > div {
+        padding-top: 0;
+    }
+
+    #section-home {
+        padding-top: 0px !important;
     }
 }
 
@@ -55,8 +63,8 @@ html, body {
         max-width: 10% !important;
     }
 
-    .center-indicators a {
-        
+    .about-page-section {
+        margin-top: 0px;
     }
 }
 
@@ -69,6 +77,10 @@ html, body {
     .header-container {
         width: 450px;
     }
+
+    .about-page-section {
+        margin-top: 30px;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -79,6 +91,10 @@ html, body {
 
     .header-container {
         width: 500px;
+    }
+
+    .about-page-section {
+        margin-top: 50px;
     }
 }
 
@@ -91,6 +107,10 @@ html, body {
     .header-container {
         width: 600px;
     }
+
+    .about-page-section {
+        margin-top: 100px;
+    }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -101,6 +121,10 @@ html, body {
 
     .header-container {
         width: 700px;
+    }
+
+    .about-page-section {
+        margin-top: 120px;
     }
 }
 

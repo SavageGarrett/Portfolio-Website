@@ -12,13 +12,26 @@ var jsApp = express();
 // Redirect to https
 app.use ((req, res, next) => {
   if (req.secure) {
-          // request was via https, so do no special handling
-          next();
+    // request was via https, so do no special handling
+    next();
   } else {
-          // request was via http, so redirect to https
-          res.redirect('https://' + req.headers.host + req.url);
+    // request was via http, so redirect to https
+    res.redirect('https://' + req.headers.host + req.url);
   }
 });
+
+// Redirect web pages
+// TODO: Proxy Load Balancer Type Thing for multiple websites
+// app.use ((req, res, next) => {
+//   // Serve My Website
+//   if (req.headers.host === "garrettcarder.com") {
+
+//   } else if (req.headers.host === "bollywoodbistro.tk") { // Serve Bollywood Website
+
+//   }
+//   console.log(req.headers.host);
+//   next();
+// })
 
 // view engine setup
 app.engine('html', require('./htmlEngine'));

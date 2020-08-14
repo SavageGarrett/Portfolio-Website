@@ -23,6 +23,19 @@ router.get('/:query', function (req, res, next){
     case "index.html":
       res.render('index');
       break;
+    case "purchase_web":
+      res.render('purchase_web')
+      break;
+    case "purchase_web.html":
+      res.render('purchase_web')
+      break;
+    // Render Subscribe Page
+    case "web_subscribe":
+      res.render('web_subscribe');
+      break;
+    case "web_subscribe.html":
+      res.render('web_subscribe');
+      break;
     /* Render Resume Page */
     case "resume":
       res.sendFile(path.join(__dirname + '/../public/pdf/resume.pdf'));
