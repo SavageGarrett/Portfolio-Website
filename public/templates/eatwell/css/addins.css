@@ -12,6 +12,15 @@ html, body {
     color: #f4e216 !important;
 }
 
+/* Link Styling */
+.site-cover a:before {
+    display: none !important;
+}
+
+.site-cover a {
+    color: #f4e216 !important;
+}
+
 /* Extra small devices (phones, 440px and down) */
 @media only screen and (max-width: 440px) {
     #main_logo {
@@ -19,11 +28,12 @@ html, body {
     }
 
     .header-container {
-        width: 400px;
+        width: 94% !important;
     }
 
     .mobile-pad {
         padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     /* Menu Context Images */
@@ -56,6 +66,7 @@ html, body {
 
     .mobile-pad {
         padding-top: 0px;
+        padding-bottom: 0px;
     }
 
     /* Menu Context Images */
