@@ -14,7 +14,7 @@
     "debug": "~4.1.1",
     "dotenv": "^8.2.0",
     "ecstatic": "^4.1.4",
-    "express": "~4.17.1",
+    "express": "~4.17.3",
     "http-errors": "~1.8.0",
     "http-proxy": "^1.18.1",
     "mongodb": "^3.6.0",
