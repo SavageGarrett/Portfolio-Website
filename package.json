@@ -19,7 +19,7 @@
     "http-proxy": "^1.18.1",
     "mongodb": "^3.6.0",
     "morgan": "~1.10.0",
-    "nodemon": "^2.0.4",
+    "nodemon": "^2.0.17",
     "package.json": "^2.0.1",
     "pm2": "^4.4.0",
     "pug": "^3.0.0"
