@@ -11,7 +11,7 @@
     "clean-css": "^4.2.3",
     "commander": "^6.0.0",
     "cookie-parser": "^1.4.5",
-    "debug": "~4.1.1",
+    "debug": "~4.3.1",
     "dotenv": "^8.2.0",
     "ecstatic": "^4.1.4",
     "express": "~4.17.1",
@@ -21,7 +21,7 @@
     "morgan": "~1.10.0",
     "nodemon": "^2.0.4",
     "package.json": "^2.0.1",
-    "pm2": "^4.4.0",
+    "pm2": "^4.5.0",
     "pug": "^3.0.0"
   }
 }
